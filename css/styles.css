@@ -2,9 +2,15 @@
   --accent-color: #2196f3;
   --main-title-color: #ffffff;
   --second-title-color: #212121;
+  --third-title-color: #212121;
+  --studio-btn-color: #ffffff;
+  --portfolio-btn-color: #212121;
+  --portfolio-second-title-color: #212121;
+  --portfolio-third-title-color: #212121;
 }
 body {
   font-family: 'Roboto', sans-serif;
+  color: #212121;
 }
 .list {
   list-style: none;
@@ -32,6 +38,20 @@ body {
 .header-nav {
 }
 .header-nav-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.header-nav-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
 }
 .header-nav-list {
 }
@@ -74,7 +94,7 @@ body {
 /*------------------------PRESENTATION------------------*/
 
 .presentation {
-  background-color: #757575;
+  background-color: #2f303a;
 }
 .presentation-title {
   font-weight: 900;
@@ -86,22 +106,54 @@ body {
   color: var(--main-title-color);
 }
 .presentation-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--studio-btn-color);
+  background-color: #2196f3;
+  cursor: pointer;
 }
 /*-------------------------BENEFITS--------------------*/
 
 .benefits {
 }
+.benefits-title {
+  color: var(--second-title-color);
+}
 .benefits-list {
 }
 .benefits-item {
 }
+.benefits-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--third-title-color);
+}
 .benefits-item-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 /*-------------------ABOUT--------------------------*/
 
 .about {
 }
 .about-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
 }
 .about-list {
 }
@@ -112,20 +164,52 @@ body {
 .team {
 }
 .team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
 }
 .team-list {
 }
 .team-item {
 }
 .team-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--third-title-color);
 }
 .team-item-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 /*-------------------------FOOTER-------------------*/
 
 .footer {
+  background-color: #2f303a;
 }
 .footer-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.footer-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
 }
 .footer-address {
 }
@@ -134,8 +218,72 @@ body {
 .footer-address-item {
 }
 .footer-address-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 .footer-mail {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-tel {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-address-link:hover,
+.footer-address-link:focus,
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--accent-color);
+}
+/*--------------------PORTFOLIO--------------------*/
+.portfolio-main {
+}
+.portfolio-main-title {
+  color: var(--portfolio-second-title-color);
+}
+.portfolio {
+}
+.portfolio-list {
+}
+.portfolio-item {
+}
+.portfolio-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--portfolio-btn-color);
+  background-color: #f5f4fa;
+  cursor: pointer;
+}
+
+.portfolio-btn:active {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.portfolio-second-list {
+}
+.second-list-item {
+}
+.second-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--portfolio-third-title-color);
+}
+.second-list-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
