@@ -256,6 +256,7 @@ body {
 .portfolio-item {
 }
 .portfolio-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -266,7 +267,8 @@ body {
   cursor: pointer;
 }
 
-.portfolio-btn:active {
+.portfolio-btn:hover,
+.portfolio-btn:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
