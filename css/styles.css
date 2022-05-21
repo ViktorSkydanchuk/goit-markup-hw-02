@@ -1,12 +1,11 @@
 :root {
   --accent-color: #2196f3;
   --main-title-color: #ffffff;
-  --second-title-color: #212121;
-  --third-title-color: #212121;
-  --studio-btn-color: #ffffff;
-  --portfolio-btn-color: #212121;
-  --portfolio-second-title-color: #212121;
-  --portfolio-third-title-color: #212121;
+  --title-color: #212121;
+  --text-color: #757575;
+  --background-color: #2f303a;
+  --second-background-color: #f5f4fa;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -19,6 +18,7 @@ body {
   text-decoration: none;
   font-style: normal;
 }
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -34,6 +34,7 @@ body {
 /*----------------------HEADER------------------*/
 
 .header {
+  background-color: var(--main-title-color);
 }
 .header-nav {
 }
@@ -43,7 +44,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .header-nav-text {
   font-family: 'Raleway', sans-serif;
@@ -57,12 +58,21 @@ body {
 }
 .header-nav-item {
 }
+
+.accent {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--title-color);
 }
 
 .header-list {
@@ -74,15 +84,17 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--text-color);
 }
 .header-tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--text-color);
 }
+.accent:hover,
+.accent:focus,
 .header-link:hover,
 .header-link:focus,
 .header-mail:hover,
@@ -94,7 +106,7 @@ body {
 /*------------------------PRESENTATION------------------*/
 
 .presentation {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 .presentation-title {
   font-weight: 900;
@@ -114,8 +126,8 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--studio-btn-color);
-  background-color: #2196f3;
+  color: var(--main-title-color);
+  background-color: var(--accent-color);
   cursor: pointer;
 }
 /*-------------------------BENEFITS--------------------*/
@@ -123,7 +135,6 @@ body {
 .benefits {
 }
 .benefits-title {
-  color: var(--second-title-color);
 }
 .benefits-list {
 }
@@ -135,13 +146,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--third-title-color);
 }
 .benefits-item-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 /*-------------------ABOUT--------------------------*/
 
@@ -153,7 +163,6 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-title-color);
 }
 .about-list {
 }
@@ -162,6 +171,7 @@ body {
 /*---------------------TEAM--------------------*/
 
 .team {
+  background-color: var(--second-background-color);
 }
 .team-title {
   font-weight: 700;
@@ -169,7 +179,6 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-title-color);
 }
 .team-list {
 }
@@ -181,19 +190,18 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--third-title-color);
 }
 .team-item-text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 /*-------------------------FOOTER-------------------*/
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 .footer-link {
   font-family: 'Raleway', sans-serif;
@@ -201,7 +209,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .footer-text {
   font-family: 'Raleway', sans-serif;
@@ -209,7 +217,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--main-title-color);
 }
 .footer-address {
 }
@@ -221,19 +229,19 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--main-title-color);
 }
 .footer-mail {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-link-color);
 }
 .footer-tel {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-link-color);
 }
 .footer-address-link:hover,
 .footer-address-link:focus,
@@ -246,8 +254,7 @@ body {
 /*--------------------PORTFOLIO--------------------*/
 .portfolio-main {
 }
-.portfolio-main-title {
-  color: var(--portfolio-second-title-color);
+.portfolio-title {
 }
 .portfolio {
 }
@@ -262,15 +269,15 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--portfolio-btn-color);
-  background-color: #f5f4fa;
+  color: var(--title-color);
+  background-color: var(--second-background-color);
   cursor: pointer;
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--main-title-color);
+  background-color: var(--accent-color);
 }
 .portfolio-second-list {
 }
@@ -281,11 +288,11 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--portfolio-third-title-color);
+  color: var(--title-color);
 }
 .second-list-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
